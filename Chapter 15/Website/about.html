@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./assets/university/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    
+                </ul>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>About Us</h1>
+    </header>
+   <main class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest university</h1>
+            <p>
+                Eduford University is dedicated to providing high-quality education and fostering academic excellence.
+                Our institution offers a supportive learning environment where students can develop knowledge, skills,
+                and confidence for their future careers. With experienced faculty members, modern facilities, and
+                innovative teaching methods, we ensure a well-rounded educational experience. We encourage research,
+                creativity, and critical thinking to help students achieve their full potential. Our diverse campus
+                community promotes collaboration, leadership, and personal growth. At Eduford University, we are
+                committed to preparing students for success in a rapidly changing global world.
+        </p>
+        <a href="" class="hero-btn red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="assets/university/about.jpg" alt="">
+        </div>
+    </div>
+   </main>
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>
+            Eduford University is committed to providing quality education and creating opportunities for students to
+            achieve their academic  and professional goals. <br> With experienced faculty, modern facilities, and a supportive
+            learning environment, we help students <br> develop the knowledge and skills needed for future success.
+        </p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by  Ameer Hamza</p>
+    </footer>
+</body>
+<script>
+    let navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = '0';
+    }
+    function hideMenu() {
+        navLinks.style.right = '-200px';
+    }
+</script>
+
+</html>
