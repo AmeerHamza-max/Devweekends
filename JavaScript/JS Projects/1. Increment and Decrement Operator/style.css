@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: crimson;
+}
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+#heading{
+    background-color: blue;
+    color: yellow;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+.counter{
+    background-color: rgb(197, 121, 29);
+    padding: 1rem;
+    color: rgb(29, 77, 65);
+}
+.btns{
+    margin-top: 3rem;
+    background-color: cyan;
+    padding: 3rem 7rem;
+    color: crimson;
+    font-size: 20px;
+    
+}
+.inc{
+    background-color: rgb(53, 79, 27);
+    padding: 1rem;
+    color: rgb(222, 175, 185);
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.dec{
+    background-color: rgb(53, 79, 27);
+    padding: 1rem;
+    color: rgb(222, 175, 185);
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.res{
+    background-color: rgb(53, 79, 27);
+    padding: 1rem;
+    color: rgb(222, 175, 185);
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}

@@ -1,0 +1,211 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* =========================
+   Header
+========================= */
+
+.container{
+    width: 100%;
+}
+
+.navContainer{
+    width: 100%;
+    background: linear-gradient(135deg,#0093E9,#80D0C7);
+    padding: 18px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#navlist{
+    width: 90%;
+    margin: auto;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navLogo{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#navItems{
+    display: flex;
+    gap: 25px;
+}
+
+#navItems a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+
+#navItems a:hover{
+    color: yellow;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   Main Content
+========================= */
+
+.contentBox{
+    width: 75%;
+    margin: 30px auto;
+
+    background: white;
+    border-radius: 20px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    box-shadow: 0 0 25px rgba(0,0,0,0.12);
+}
+
+/* Recipe Card */
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 25px;
+    border-radius: 20px;
+
+    transition: all 0.4s ease;
+}
+
+.item:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Left Side */
+
+.leftBox{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftBox h2{
+    color: #0093E9;
+    margin-bottom: 10px;
+}
+
+.leftBox ul,
+.leftBox ol{
+    padding-left: 20px;
+}
+
+.leftBox li{
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Right Side */
+
+.rightBox{
+    overflow: hidden;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.rightBox img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: all 0.6s ease;
+}
+
+.rightBox:hover img{
+    transform: scale(1.08);
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footerBox{
+    background: linear-gradient(135deg,#0093E9,#80D0C7);
+
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footerBox p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px){
+
+    .contentBox{
+        width: 92%;
+        padding: 20px;
+    }
+
+    .item{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leftBox ul,
+    .leftBox ol{
+        text-align: left;
+    }
+
+    .rightBox img{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    #navlist{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #navLogo{
+        font-size: 1.5rem;
+    }
+}

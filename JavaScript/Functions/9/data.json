@@ -1,0 +1,11 @@
+{
+    "name":"Ameer Hamza",
+    "age":20,
+    "email":"js@gmail.com",
+    "isSubscribed":true,
+    "hobbies":["Cricket","Programming"],
+    "address":{
+        "city":"Lahore",
+        "idk":true
+    }
+}
