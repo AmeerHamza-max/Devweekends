@@ -1,0 +1,28 @@
+Javascript
+    Synchronous
+    Single Threaded
+Execution Context
+    execute one line of code at a time each operation waits 
+    forthe last one to complete the executing
+    console.log -> 1  
+    console.log -> 2
+
+Blocking code         vs   Non Blocking code
+1.Block the whole         1. Did not block Execution
+Execution                 2. Read File Async
+2.Run file Sync
+
+
+JS engine
+1. Memory Heap
+2. Call Stack
+
+
+Web API
+1.DOM API
+2.Set timout
+3.Set Interval
+4.fetch();
+
+When call stack call the web api there is register call stack who recieve the web api and send it 
+to the task queue and task queue send it to the stack

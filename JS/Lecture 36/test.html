@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Images</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            padding:30px;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+            color:#333;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+        }
+
+        .gallery{
+            max-width:1200px;
+        }
+
+        ul{
+            list-style:none;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+        }
+
+        li img{
+            width:200px;
+            height:150px;
+            object-fit:cover;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        li img:hover{
+            transform:scale(1.05);
+        }
+
+        .link{
+            text-align:center;
+            margin-top:30px;
+        }
+
+        .link a{
+            text-decoration:none;
+            font-size:22px;
+            font-weight:bold;
+            color:blue;
+        }
+
+        .link a:hover{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Amazing Images</h2>
+
+    <div class="container">
+        <div class="gallery">
+
+            <ul id="images">
+                <li><img id="img1" src="https://picsum.photos/id/1015/200/150" alt="Image 1"></li>
+
+                <li><img id="img2" src="https://picsum.photos/id/1016/200/150" alt="Image 2"></li>
+
+                <li><img id="img3" src="https://picsum.photos/id/1018/200/150" alt="Image 3"></li>
+
+                <li><img id="img4" src="https://picsum.photos/id/1020/200/150" alt="Image 4"></li>
+
+                <li><img id="img5" src="https://picsum.photos/id/1024/200/150" alt="Image 5"></li>
+
+                <li><img id="img6" src="https://picsum.photos/id/1025/200/150" alt="Image 6"></li>
+
+                <li><img id="img7" src="https://picsum.photos/id/1033/200/150" alt="Image 7"></li>
+
+                <li><img id="img8" src="https://picsum.photos/id/1035/200/150" alt="Image 8"></li>
+
+                <li><img id="img9" src="https://picsum.photos/id/1040/200/150" alt="Image 9"></li>
+
+                <li><img id="img10" src="https://picsum.photos/id/1043/200/150" alt="Image 10"></li>
+            </ul>
+
+            <div class="link">
+                <a id="googleLink" href="https://www.google.com" target="_blank" >Google</a>
+            </div>
+
+        </div>
+    </div>
+<script src="test.js"></script>
+</body>
+</html>
